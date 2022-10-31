@@ -1,85 +1,224 @@
 
-//Створіть дві змінні a та b. Виведіть у консоль результат їх множення.
-//const a = 3;
-//const b = 2;
-//t = a * b;
-//console.log('t :>> ', t);
-// Створіть дві змінні c та d. Виведіть у консоль результат ділення першого на друге.
-//const c = 10;
-//const d = 2;
-//w = c / d;
-//console.log('w :>> ', w);
+//const agee = 18;
+//console.log('age > 18 :>>', age > 18);
+//console.log('age < 18 :>>', age < 18);
+//console.log('age >= 18 :>>', age >= 18);
+//console.log('age >= 18 :>>', age >= 18);
+//console.log('age == 18 :>>', age == 18);
 
 
-// Створіть дві змінні e та f. Виведіть у консоль результат додавання.
-//const e = 1;
-//const f = 2;
-//k = e + f;
-//console.log('k :>> ', k);
+//const age = 18;
+//const isVactinated = true;
+//if (age < 18) {
+//	console.log('Wellcome');
+//} else {
+//	if (isVactinated)
+//		console.log('Wellcome');
+//}else {
+//	console.log('Please do to vactination');
+//}
+//const userInput1 = Number(prompt("Введіть перше число"));
+//const userInput2 = Number(prompt("Введіть друге число"));
+//if (userInput1 > userInput2) {//
+//console.log("більше число = ", userInput1);
+//} else if (userInput1 < userInput2) {
+//	console.log("більше число = ", userInput2);
+//} else if (userInput1 === userInput2) {
+//console.log("Вони еквівалентні", userInput1 + ' = ' + userInput2);
+//}
+//const a = Number(prompt("Input number a"));
+//const b = Number(prompt("Input number b"));
+//if (a === b) {
+//console.log("a=b");
+//} else if (a > b) {
+//console.log("a>b");
+//} else {
+//console.log("a<b");
+//}
+// if - розгалуження
 
-// Визначте змінні зі значеннями 11, true, "java script", "100" і виведіть їх в консоль
-//let Number = 11;
-//let g = true;
-//let Name = "java script";
-//let nut = "100";
+// if (умова) {
+//   гілка true;
+// } else {
+//   гілка false;
+// }
 
-//console.log('Number :>> ', Number);
-//console.log('g :>> ', g);
-//console.log('Name :>> ', Name);
-//console.log('nut :>> ', nut);
+// Булевські змінні імунуємо з is...
 
+// const isLogged = false;
 
-// Переробіть наведений код так, щоб у ньому використовувалися операції +=, -=, *=, /=, ++, --
-//num = num + 11;
-//let num = 1;
-//num += 11;
-//console.log('num :>> ', num);
-//num = num – 11;
-let num = 1;
-num -= 11;
-console.log('num :>> ', num);
-//num = num * 11;
-//let num = 1;
-//num *= 11;
-//console.log('num :>> ', num);
-//num = num / 11;
-//let num = 1;
-//num /= 11;
-//.log('num :>> ', num);
-//num = num + 1;
-//let num = 1;
-//num += 1;
-//console.log('num :>> ', num);
-//num = num – 1;
-//let num = 1;
-//num -= 1;
-//console.log('num :>> ', num);
-//Таски на prompt (вводити з допомогою prompt, виводити з допомогою alert):
+// if (isLogged) {
+//   console.log('You are logged in))))');
+// } else {
+//   console.log('Try again(((');
+// }
 
-//1) Запитати число у користувача, піднести його до квадрату і вивести результат.
-//const inputValue = Number(prompt('Введіть число:'));
-//const alert = inputValue ** 2;
-//console.log('alert :>> ', alert);
+// Задана змінна
 
+// const isEnoughMoney = true;
 
+// Якщо грошей достатньо, вивести “Операцію схвалено)”
+// Якщо недостатньо, то вивести “Операцію відхилено(”
 
+// const isEnoughMoney = true;
 
-//2) Вивести середнє арифметичне двох чисел. Числа запитувати у користувача.
-//const a = +prompt('input value');
-//const b = Number(prompt('input value'));
-//const result = (a + b) / 2;
-//console.log('You summ is ', result);
+// if (isEnoughMoney) {
+//   console.log('Операцію схвалено)))');
+// } else {
+//   console.log('Операцію не схвалено(((');
+// }
 
+// Перевірити, чи скінченне число ввів користувач і видати відповідне повідомлення.
 
-//3) Перевести кількість хвилин на секунди та вивести результат. Число хвилин запитувати у користувача.
-//const a = Number(prompt('input value'));
-//const result = a * 60;
-//console.log('You summ is ', result);
+// const inputValue = Number(prompt('Input number')); // => 55, Infinity, NaN
 
+// if (Number.isFinite(inputValue)) {
+//   console.log('number');
+// } else {
+//   console.log('not a finite number');
+// }
 
+// Умовні операці
 
-//4) Створіть змінну greeting зі значенням 'Hello,' і оголосіть змінну userName . Запитайте ім'я користувача та внесіть це значення у змінну userName. Виведіть повідомлення з привітанням, наприклад, 'Hello, Vasya!'. (згадайте про конкатенацію)
-let userName = (prompt('input value'));
-const greeting = "Helo + userName )!";
-console.log('greeting :>> ', greeting);
-//не получается в консоли выводит   greeting :>>  Helo + userName )!
+// const age = 18;
+
+// console.log('age > 18 :>> ', age > 18);
+// console.log('age < 18 :>> ', age < 18);
+// console.log('age >= 18 :>> ', age >= 18);
+// console.log('age <= 18 :>> ', age <= 18);
+
+// Нестрога рівність / нерівність - ПОГАНО!
+// console.log('age == 18 :>> ', age == 18);
+// console.log('age == "18" :>> ', age == '18');
+// console.log('age != 18 :>> ', age != 18);
+// console.log('age != "18" :>> ', age != '18');
+
+// Строга / нерівність рівність
+// console.log('age === 18 :>> ', age === 18);
+// console.log('age === "18" :>> ', age === '18');
+// console.log('age !== 18 :>> ', age !== 18);
+// console.log('age !== "18" :>> ', age !== '18'); // 18!=='18'
+
+// Якщо користовач повнолітній, то привітати, якщо ні - то доступ заборонений
+
+// const age = 20;
+
+// if (age >= 18) {
+//   console.log('Wellcome!');
+// } else {
+//   console.log('Access is denied');
+// }
+
+// Скорочена форма if
+
+// При вході перевірити, чи користувач повнолітній
+// Якщо ні - то видати попередження про обмежений доступ
+// Вивести привітання
+
+// if (умова) {
+//   гілка true;
+// }
+
+// const age = 18;
+
+// if (age < 18) {
+//   console.log('Деякі функції будуть обмежені');
+// }
+
+// console.log('Вітаємо на сайті!)');
+
+// если пользователь несовершеннолетний, то "Wellcome"
+// иначе если сертификат есть, то "Wellcome"
+// иначе вакцинироваться
+
+//const age = 18;
+//const isVactinated = true;
+
+//if (age < 18) {//
+// console.log('Wellcome)');
+//} else {
+//  if (isVactinated) {
+//    console.log('Wellcome)');
+//  } else {
+//    console.log('Please go to vactination');
+//  }
+//}
+
+// if (умова) {
+//   гілка true;
+// } else if (умова) {
+//   гілка ;
+// } else if (умова) {
+//   гілка ;
+// } else {
+//   гілка false;
+// }
+
+//if (age < 18) {
+//  console.log('Wellcome');
+//} else if (isVactinated) {
+//  console.log('Wellcome');
+//} else {
+//  console.log('Please go to vactination');
+//}
+
+// Ввести 2 числа. Вивести з них більше
+// Ввести 2 числа. Вивести що вони рівні, а якщо ні, то більше з них
+//  Виконати перевірку, що числа коректні
+
+//const userInput1 = Number(prompt('Введіть перше число'));
+//const userInput2 = Number(prompt('Введіть друге число'));
+
+//if (userInput1 > userInput2) {//
+//  console.log('більше число = ', userInput1);
+//} else if (userInput1 < userInput2) {
+//  console.log('більше число = ', userInput2);
+//} else {
+//  console.log('Вони еквівалентні', userInput1 + ' = ' + userInput2);
+//}
+//if (age < 18) {
+//  console.log('Wellcome');
+//} else if (isVactinated) {
+//  console.log('Wellcome');
+//} else {
+//  console.log('Please go to vactination');
+//const age = 18;
+//const isVactinated = true;
+
+//if (age < 18 || isVactinated) {
+//	console.log('Wellcome');
+//} else {
+//	console.log('Please go to vactination');
+//}
+//console.group(" tebel &&")
+//console.log('true && true :>> ', true && true);
+//console.log('false && true :>> ', false && true);
+//console.log('true && true :>> ', true && true);
+//console.log('false && true :>> ', false && true);
+
+// Вивести нагадування, якщо парне число випало на п'ятницю
+//const day = 'Friday';
+//const date = 15;
+//if (day === 'Friday' && date % 2 === 0) {
+//	console.log('Wellcome');
+///} else {
+//	console.log('Please go to');
+//}
+//console.group(" tebel &&")
+//console.log('true && true :>> ', true && true);
+//console.log('false && true :>> ', false && true);
+//console.log('true && true :>> ', true && true);
+//console.log('false && true :>> ', false && true);
+//const userAge = 20;
+//const userChildAge = 5;
+//if (userAge >= 60 || userChildAge < 18) {
+//	console.log("Znigki)");
+//}
+// У пользователя есть книга с pageCount страниц    5
+// 1) Вывести номера страниц с 1й по последнюю      1 2 3 4 5
+// 2) * Вывести четные номера страниц по последнюю  2 4
+
+//const limit = 16;
+//for (let i = 2; i <= 16; i += 2) {
+//	console.log(i);
+//}
